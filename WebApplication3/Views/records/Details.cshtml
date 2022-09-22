@@ -1,0 +1,72 @@
+﻿@model WebApplication3.Models.record
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<style>
+    body {
+        background-color: coral;
+    }
+</style>
+
+<h2 style="color:deepskyblue;">Details</h2>
+
+<div>
+    <h4 style="color:forestgreen;">record</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.roll_number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.roll_number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.@class)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.@class)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.section)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.section)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.parent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.parent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
